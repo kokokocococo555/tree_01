@@ -9,7 +9,7 @@ df = pd.read_csv(csv_path, encoding="shift-jis")
 # # graphvizのAPIを使用してdot言語のスクリプト作成------------
 # ## インスタンスを作成
 dot = Digraph(comment="tree")
-dot.format = "png"  # 保存するフォーマット
+dot.format = "svg"  # 保存するフォーマット
 # ## フォント設定
 # PNG出力の際に日本語を表示するために必要
 dot.attr('node', fontname="Meiryo UI")
